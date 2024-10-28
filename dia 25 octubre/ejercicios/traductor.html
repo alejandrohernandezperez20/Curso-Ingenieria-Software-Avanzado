@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>    <title>Document</title>
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    <script>
+        function empiezo(){
+            var numero=prompt("Pon lo que quieres traducir(1 al 10):\n");
+            var comprobacion=parseInt(numero);
+            if(isNaN(comprobacion)){
+                switch(numero.toLowerCase()){
+                    case "uno": document.getElementById("traducido").innerHTML="ONE";
+                        break;
+                    case "dos": document.getElementById("traducido").innerHTML="TWO";
+                        break;
+                    case "tres": document.getElementById("traducido").innerHTML="THREE";
+                        break;
+                    case "cuatro": document.getElementById("traducido").innerHTML="FOUR";
+                        break;
+                    case "cinco": document.getElementById("traducido").innerHTML="FIVE";
+                        break;
+                    case "seis":document.getElementById("traducido").innerHTML="SIX"
+                        break;
+                    case "siete":document.getElementById("traducido").innerHTML="SEVEN"
+                        break;
+                    case "ocho":document.getElementById("traducido").innerHTML="EIGHT"
+                        break;
+                    case "nueve":document.getElementById("traducido").innerHTML="NINE"
+                        break;
+                    case "diez":document.getElementById("traducido").innerHTML="TEN"
+                        break;
+                    default:document.getElementById("traducido").innerHTML="Error esta palabra no esta en la aplicacion para traducir";
+                        break;
+                }
+            }else{
+                switch(comprobacion){
+                    case 1: document.getElementById("traducido").innerHTML="ONE";
+                        break;
+                    case 2: document.getElementById("traducido").innerHTML="TWO";
+                        break;
+                    case 3: document.getElementById("traducido").innerHTML="THREE";
+                        break;
+                    case 4: document.getElementById("traducido").innerHTML="FOUR";
+                        break;
+                    case 5: document.getElementById("traducido").innerHTML="FIVE";
+                        break;
+                    case 6:document.getElementById("traducido").innerHTML="SIX"
+                        break;
+                    case 7:document.getElementById("traducido").innerHTML="SEVEN"
+                        break;
+                    case 8:document.getElementById("traducido").innerHTML="EIGHT"
+                        break;
+                    case 9:document.getElementById("traducido").innerHTML="NINE"
+                        break;
+                    case 10:document.getElementById("traducido").innerHTML="TEN"
+                        break;
+                    default:document.getElementById("traducido").innerHTML="Error esta palabra no esta en la aplicacion para traducir";
+                        break;
+                }
+            }
+        }
+    </script>
+
+    <style>
+        #encabezado{
+            width: 100%;
+            height: 150px;
+            background-color: green;
+        }
+        #encabezado img{
+            width: 10%;
+            height: 90%;
+        }
+        #contenedor{
+            margin-left: 30%;
+            margin-top: 10%;
+            height: 30%;
+            border: 10px black solid;
+            border-radius: 4px;
+            width: 30%;
+            text-align: center;
+            padding: 5px;
+            color: rgb(23, 104, 79);
+            background-color: rgb(166, 248, 241);
+        }
+        #contenedor h4{
+            font-family: 'Lucida Sans', Verdana, sans-serif;
+        }
+
+        #contenedor p{
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            font-weight: 500;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="encabezado">
+        <img src="./img/logo.png" alt="" >
+    </div>
+    <div
+        id="contenedor"
+    >
+        <h4>Traducir</h4>
+        <p id="traducido"></p>
+        <button type="button" class="btn btn-success" onclick="empiezo()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+            <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+          </svg>Traducir</button>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+></script>
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+></script>
+</body>
+</html>

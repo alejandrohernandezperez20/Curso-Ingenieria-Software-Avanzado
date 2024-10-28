@@ -1,0 +1,8 @@
+@startuml prueba
+
+juan ->paco: saludo
+juan <--paco: responde
+juan -> jesus: saludo
+juan <-- jesus: responde
+
+@enduml

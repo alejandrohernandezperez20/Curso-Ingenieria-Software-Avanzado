@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #app8g{
+           height: 450px;
+           width: 300px;
+           border-radius: 10px;
+        }
+        #app8g form{
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+        #app8g input[type=textfield]{
+            height: 25%;
+            width: 80%;
+            cursor: default;
+            font-family: 'Reboto' sans-serif;
+            background-color: rgb(2, 1, 1);
+            color: white;
+            padding: 15px;
+            text-align: right;
+            font-size: 50px;
+            border: 0;
+            outline: none;
+        }
+        #app8g input[type=button],input[type=reset]{
+            width: 22%;
+            cursor: pointer;
+            font-family: 'Reboto' sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            color: #000;
+            padding: 18px;
+            margin: 3px;
+            border: 20px;
+            border-radius: 100%;
+        }
+        #app8g .orange{
+            background-color: rgb(253, 140, 3);
+            color: white;
+        }
+
+        #app8g .gray{
+            background-color:tomato;
+            color: slategray;
+        }
+
+        #app8g{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<div id="app8g">
+  <form name="calculator">
+    <input type="textfield" class="text-input" name="ans" autocomplete="off" readonly>
+    <br>
+    <input type="button" value="7" onclick="document.calculator.ans.value+='7'" class="gray">
+    <input type="button" value="8" onclick="document.calculator.ans.value+='8'" class="gray">
+    <input type="button" value="9" onclick="document.calculator.ans.value+='9'" class="gray">
+    <input type="button" value="+" onclick="document.calculator.ans.value+='+'" class="orange">
+    <br>
+    <input type="button" value="4" onclick="document.calculator.ans.value+='4'" class="gray">
+    <input type="button" value="5" onclick="document.calculator.ans.value+='5'" class="gray">
+    <input type="button" value="6" onclick="document.calculator.ans.value+='6'" class="gray">
+    <input type="button" value="-" onclick="document.calculator.ans.value+='-'" class="orange">
+    <br>
+    <input type="button" value="1" onclick="document.calculator.ans.value+='1'" class="gray">
+    <input type="button" value="2" onclick="document.calculator.ans.value+='2'" class="gray">
+    <input type="button" value="3" onclick="document.calculator.ans.value+='3'" class="gray">
+    <input type="button" value="*" onclick="document.calculator.ans.value+='*'" class="orange">
+    <br>
+    <input type="button" value="0" onclick="document.calculator.ans.value+='0'" class="gray">
+    <input type="reset" value="C">
+    <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+    <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="orange">
+ </form>
+</div>
+</body>
+</html>

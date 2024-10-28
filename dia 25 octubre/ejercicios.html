@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<script src="./js/js.js"></script>-->
+    <script>
+        alert("VAMOS A CREAR SCRIPT");
+    </script>
+</head>
+<body>
+    <script>
+        var nombre;
+        var edad;
+        var nota1,nota2,nota3;
+
+        /*nombre=prompt("Ingrese su nombre: ",'');
+        edad=prompt("Ingrese su edad: ");
+        alert("Bienvenidos "+nombre+" su edad es: "+edad);
+        document.write("Bienvenidos "+nombre+" su edad es: "+edad);*/
+        nombre=prompt("ingrese nombre del estudiante: ");
+        nota1=prompt("ingrese nota 1: ");
+        nota2=prompt("ingrese nota 2: ");
+        nota3=prompt("ingrese nota 3: ");
+        nota1=parseInt(nota1);
+        nota2=parseInt(nota2);
+        nota3=parseInt(nota3);
+        var pro=(nota1+nota2+nota3)/3;
+        if(pro>=5){
+            document.write("El estudiante: "+nombre+" esta arpobado con eñ promedio de: "+pro);
+        }else{
+            document.write("El estudiante no aprobo");
+        }
+        
+    </script>
+</body>
+</html>
